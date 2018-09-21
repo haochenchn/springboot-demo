@@ -1,10 +1,10 @@
-package com.didispace.service;
+package com.ch.service;
 
 /**
  * @author 程序猿DD
  * @version 1.0.0
  * @date 16/3/17 下午7:04.
- * @blog http://blog.didispace.com
+ * @blog http://blog.ch.com
  */
 public interface UserService {
 

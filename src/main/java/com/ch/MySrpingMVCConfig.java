@@ -1,4 +1,4 @@
-package com.didispace;
+package com.ch;
 import java.nio.charset.Charset;
 import java.util.List;
 

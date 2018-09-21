@@ -1,4 +1,4 @@
-package com.didispace.domain;
+package com.ch.domain;
 
 import org.apache.ibatis.annotations.*;
 

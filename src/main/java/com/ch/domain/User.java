@@ -1,4 +1,4 @@
-package com.didispace.domain;
+package com.ch.domain;
 
 
 
@@ -6,7 +6,7 @@ package com.didispace.domain;
  *
  * @author 程序猿DD
  * @version 1.0.0
- * @blog http://blog.didispace.com
+ * @blog http://blog.ch.com
  *
  */
 public class User {

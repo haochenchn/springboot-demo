@@ -1,4 +1,4 @@
-package com.didispace.service;
+package com.ch.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
  * @author 程序猿DD
  * @version 1.0.0
  * @date 16/5/5 下午12:16.
- * @blog http://blog.didispace.com
+ * @blog http://blog.ch.com
  */
 @Component
 public class BlogProperties {

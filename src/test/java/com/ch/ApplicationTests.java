@@ -1,9 +1,9 @@
-package com.didispace;
+package com.ch;
 
-import com.didispace.domain.User;
-import com.didispace.domain.UserMapper;
-import com.didispace.service.BlogProperties;
-import com.didispace.service.UserService;
+import com.ch.domain.User;
+import com.ch.domain.UserMapper;
+import com.ch.service.BlogProperties;
+import com.ch.service.UserService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Assert;
@@ -21,7 +21,7 @@ import java.util.List;
  *
  * @author 程序猿DD
  * @version 1.0.0
- * @blog http://blog.didispace.com
+ * @blog http://blog.ch.com
  *
  */
 @RunWith(SpringJUnit4ClassRunner.class)

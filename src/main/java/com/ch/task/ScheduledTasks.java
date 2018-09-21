@@ -1,4 +1,4 @@
-package com.didispace.task;
+package com.ch.task;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
