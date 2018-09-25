@@ -1,0 +1,29 @@
+
+server:
+  port: 1111
+spring:
+  datasource:
+    primary:
+      url: jdbc:mysql://localhost:3306/test
+      username: root
+      password: 111111
+      driver-class-name: com.mysql.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+    secondary:
+      url: jdbc:mysql://localhost:3306/clouddb02
+      username: root
+      password: 111111
+      driver-class-name: com.mysql.jdbc.Driver
+
+## 该配置节点为独立的节点，不能将这个配置放在spring的节点下，导致配置无法被识别
+#mybatis:
+#  mapper-locations: classpath:mapping/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+#  type-aliases-package: com.ch.model  # 注意：对应实体类的路径
+
+#pagehelper分页插件
+#pagehelper:
+#    helperDialect: mysql
+#    reasonable: true
+#    supportMethodsArguments: true
+#    params: count=countSql
+

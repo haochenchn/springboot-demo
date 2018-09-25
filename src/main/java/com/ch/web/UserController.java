@@ -1,6 +1,6 @@
 package com.ch.web;
 
-import com.ch.domain.User;
+import com.ch.pojo.User;
 
 import java.util.*;
 

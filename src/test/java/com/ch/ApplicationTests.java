@@ -1,7 +1,7 @@
 package com.ch;
 
-import com.ch.domain.User;
-import com.ch.domain.UserMapper;
+import com.ch.pojo.User;
+import com.ch.mapper.UserMapper;
 import com.ch.service.BlogProperties;
 import com.ch.service.UserService;
 import org.apache.commons.logging.Log;
@@ -40,9 +40,9 @@ public class ApplicationTests {
 	@Test
 	@Rollback
 	public void findByName() {
-		//userMapper.insert("AAA", 20);
-		User u = userMapper.findByName("AAA");
-		Assert.assertEquals(20, u.getAge().intValue());
+		userMapper.insert("AAA", 20);
+//		User u = userMapper.findByName("AAA");
+//		Assert.assertEquals(20, u.getAge().intValue());
 		List<User> users = userMapper.findAll();
 		users.stream().forEach(item -> System.out.println(item.getName()+":"+item.getAge()));
 	}

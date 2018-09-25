@@ -1,6 +1,7 @@
-package com.ch;
+package com.ch.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -17,9 +18,10 @@ import javax.sql.DataSource;
  * @blog http://blog.ch.com
  */
 @Configuration
+@AutoConfigureAfter(MybatisConfig.class) //保证在MyBatisConfig实例化之后再实例化该类
 public class DataSourceConfig {
 
-    @Bean(name = "primaryDataSource")
+    /*@Bean(name = "primaryDataSource")
     @Qualifier("primaryDataSource")
     @ConfigurationProperties(prefix="spring.datasource.primary")
     public DataSource primaryDataSource() {
@@ -32,7 +34,7 @@ public class DataSourceConfig {
     @ConfigurationProperties(prefix="spring.datasource.secondary")
     public DataSource secondaryDataSource() {
         return DataSourceBuilder.create().build();
-    }
+    }*/
 
     @Bean(name = "primaryJdbcTemplate")
     public JdbcTemplate  primaryJdbcTemplate(

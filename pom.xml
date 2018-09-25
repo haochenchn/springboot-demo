@@ -64,6 +64,14 @@
 			<optional>true</optional>
 			<scope>true</scope>
 		</dependency>
+
+		<!-- druid阿里巴巴数据库连接池 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.26</version>
+		</dependency>
+
 	</dependencies>
 	
 	<build>

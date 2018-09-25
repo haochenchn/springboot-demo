@@ -1,6 +1,7 @@
 package com.ch.service;
 
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,24 +11,20 @@ import org.springframework.stereotype.Component;
  * @blog http://blog.ch.com
  */
 @Component
+@ConfigurationProperties(prefix = "com.didispace.blog")
+// PropertySource默认取application.properties
+@PropertySource(value = "blog.properties")
 public class BlogProperties {
 
-    @Value("${com.didispace.blog.name}")
+    /*@Value("${com.didispace.blog.name}")*/
     private String name;
-    @Value("${com.didispace.blog.title}")
     private String title;
-    @Value("${com.didispace.blog.desc}")
     private String desc;
 
-    @Value("${com.didispace.blog.value}")
     private String value;
-    @Value("${com.didispace.blog.number}")
     private Integer number;
-    @Value("${com.didispace.blog.bignumber}")
     private Long bignumber;
-    @Value("${com.didispace.blog.test1}")
     private Integer test1;
-    @Value("${com.didispace.blog.test2}")
     private Integer test2;
 
     public String getName() {

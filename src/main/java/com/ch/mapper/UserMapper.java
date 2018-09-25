@@ -1,5 +1,6 @@
-package com.ch.domain;
+package com.ch.mapper;
 
+import com.ch.pojo.User;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

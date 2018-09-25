@@ -1,4 +1,4 @@
-package com.ch;
+package com.ch.config;
 import java.nio.charset.Charset;
 import java.util.List;
 
